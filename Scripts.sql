@@ -41,3 +41,19 @@ select * from USER_CONSTRAINTS;
 /* 10 */
 select * from ALL_TAB_COLUMNS where TABLE_NAME='HOSPITALISATION';
 select * from USER_CONSTRAINTS where TABLE_NAME='HOSPITALISATION';
+
+/* 11 */
+select * from USER_TAB_PRIVS;
+select * from SESSION_PRIVS;
+
+/* 12 */
+select * from SESSION_ROLES
+
+/* 13 */
+select * from USER_OBJECTS;
+
+/* 14 */
+select DISTINCT OWNER from ALL_TAB_COLUMNS where TABLE_NAME='HOSPITALISATION';
+
+/* 15 */
+select BYTES/1024 as SIZE_TABLE_KO from USER_SEGMENTS where SEGMENT_NAME='HOSPITALISATION';
