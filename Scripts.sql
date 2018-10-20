@@ -58,4 +58,8 @@ select DISTINCT OWNER from ALL_TAB_COLUMNS where TABLE_NAME='HOSPITALISATION';
 /* 15 */
 select BYTES/1024 as SIZE_TABLE_KO from USER_SEGMENTS where SEGMENT_NAME='HOSPITALISATION';
 
+/* 16 */
+select tablespace_name,block_size,contents from DBA_TableSpaces where tablespace_name like 'HOPITAL%';
+select * from all_users where username='DBAHOPITAL' ;
+select GRANTEE,OWNER,TABLE_NAME,PRIVILEGE,GRANTABLE from USER_TAB_PRIVS;
 /* FIN */ 
